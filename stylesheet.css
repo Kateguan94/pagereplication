@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    width: 1440px;
+    height: 2682px;
+    position: relative;
+}
+
+.bgImage {
+    /*width: 100vw;*/
+    position: absolute;
+    z-index: -1;
+}
+
+nav {
+    width: 38%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 14px;
+    display: block;
+    padding-right: 4%;
+    position: absolute;
+    right: 0;
+    letter-spacing: 1.3px;
+    z-index: 1;
+}
+
+nav ul {
+    padding-left: 1px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    padding-right: 32px;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    height: 640px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle {
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.headerImage {
+    background: url('http://www.invtechnologies.in/webservices/vizagrestaurant/restaurant.jpg')no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.overlay {
+    background-color: #b13462;
+    width: 100%;
+    height: 100%;
+    opacity: 0.92;
+}
+
+
+.header h1 {
+    font-size: 44px;
+    font-weight: 100;
+    font-family: 'Adamina', serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 7px 0;
+    letter-spacing: 4px;
+}
+
+.header h2 {
+    font-size: 22px;
+    font-family: 'Taviraj', serif;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.intro {
+    position: relative;
+    /* background-color: #e4e7e8; */
+    width: 100%;
+    height: 695px;
+}
+
+.staff {
+    width: 100%;
+    height: 160px;
+    font-size: 28px;
+    font-weight: 100;
+    font-family: 'Adamina', serif;
+}
+
+.headerIntro {
+    padding-top: 2px;
+    padding-right: 22px;
+    letter-spacing: 4px;
+}
+.headerIntro  h1{
+    margin: 0;
+    padding: 20px 0;
+}
+
+.headerIntro .underline {
+    border-bottom: 2px solid #dbdbdb;
+    width: 122px;
+}
+
+.staffIntro {
+    padding: 0 240px;
+}
+
+.info {
+    height: 400px;
+    flex: 1;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.info .img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.info img {
+    width: 300px;
+    position: relative;
+}
+
+.info h3 {
+    padding-top: 12px;
+    font-size: 23px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #57595a;
+    margin-bottom: 13px;
+}
+
+.info p {
+    font-family: 'Taviraj', serif;
+    padding: 0px 25px;
+    width: 265px;
+    line-height: 24px;
+    color: #80888e;
+}
+
+.socialMedia {
+    width: 100%;
+    height: 438px;
+    background-color: #f3f3f3;
+}
+
+.socialMedia .mediaBgImg {
+    /*background: url('http://www.designbolts.com/wp-content/uploads/2012/12/simple-pattern-white-seamless-website-background.jpg');*/
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 440px;
+    z-index: -1;
+}
+
+.gallery {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.gallery .imageContainer {
+    border-radius: 4px;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 0 2px 2px -2px #00000080;
+    margin: 0 14px;
+    height: 192px;
+}
+
+.gallery img {
+    width: 192px;
+    height: 192px;
+}
+
+.followInstagram {
+    padding: 20px;
+}
+
+.connectInstagram {
+    justify-content: center;
+    width: 292px;
+    height: 58px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.connectInstagram img {
+    width: 23px;
+    height: 23px;
+    padding: 17px 11px;
+}
+
+.connectInstagram a {
+    text-decoration: none;
+    margin: 8px;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #d4d4d9;
+}
+
+.contactSection {
+    padding: 0 240px;
+    background-color: #c53163;
+    height: 646px;
+}
+
+.contactUs {
+    height: 188px;
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contactUs h2 {
+    font-weight: 100;
+    margin: 0;
+    padding: 57px 0 19px;
+}
+
+.contactUs .underline {
+    border-bottom: 2px solid #ffffff;
+    width: 122px;
+}
+
+.contactForm {
+    padding: 0 7px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 386px;
+    padding: 16px 33px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: #e3e6e8;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+input {
+    font-size: 22px;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 20px;
+    color: #e3e6e8;
+}
+
+.mapAddress {
+    padding: 16px 0 16px 33px;
+}
+
+.map {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+iframe {
+    width: 452px;
+}
+
+.sendButton {
+    background-color: #333333;
+    color: #fdfdfd;
+    border: none;
+    width: 448px;
+    letter-spacing: 2px;
+}
+
+.address {
+    font-family: 'Taviraj', serif;
+    color: #eeecec;
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+.bottom {
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.bottomLinks {
+    padding: 58px 0 33px;
+}
+
+.bottomMenu {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 0 32px;
+}
+
+.bottomMenu:hover {
+    text-decoration: underline;
+}
+
+.bottomCircle {
+    border-radius: 50%;
+    background-color: #c53163;
+    line-height: 42px;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    color: #ffffff;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+    margin: 0 20px;
+}
+
+.logo img {
+    position: relative;
+    width: 13px;
+    top: 7px;
+    left: 8px;
+}
+
+img.logoFacebook {
+    width: 26px;
+    left: 3px;
+    top: 2px;
+}
+
+footer {
+    color: #565353;
+    font-size: 11px;
+    text-align: center;
+    padding: 73px 0 10px;
+}
