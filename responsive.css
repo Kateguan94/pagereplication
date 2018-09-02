@@ -1,0 +1,53 @@
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+
+    nav {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .headerIntro h1 {
+        font-size: 20px;
+    }
+
+    .info h3 {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .info p {
+        line-height: 18px;
+        font-size: 14px;
+        max-width: 350px;
+    }
+    .contactSection > .row {
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        font-size: 12px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .bottom > .bottomLinks {
+        flex-direction: column;
+    }
+
+    .bottom .bottomCircle {
+        display: none;
+    }
+
+    .bottomMenu {
+        padding: 16px;
+    }
+}
