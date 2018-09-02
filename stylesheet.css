@@ -1,57 +1,49 @@
 body {
     margin: 0;
-    width: 1440px;
-    height: 2682px;
-    position: relative;
-}
-
-.bgImage {
-    /*width: 100vw;*/
-    position: absolute;
-    z-index: -1;
 }
 
 nav {
-    width: 38%;
+    width: 45%;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    padding-top: 14px;
-    display: block;
-    padding-right: 4%;
+    padding-top: 40px;
+    padding-right: 10%;
     position: absolute;
     right: 0;
     letter-spacing: 1.3px;
     z-index: 1;
 }
 
-nav ul {
-    padding-left: 1px;
-    padding-top: 10px;
-}
-
-nav ul li {
-    list-style-type: none;
+nav a {
     text-transform: uppercase;
-    padding-right: 32px;
-}
-
-li a {
     text-decoration: none;
     color: #ffffff;
+    white-space: nowrap;
+    flex: 1;
+    text-align: right;
 }
 
-li a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
 .header {
-    height: 640px;
+    height: 55vw;
     position: relative;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .middle {
@@ -84,7 +76,7 @@ li a:hover {
 
 
 .header h1 {
-    font-size: 44px;
+    font-size: 4vw;
     font-weight: 100;
     font-family: 'Adamina', serif;
     color: #ffffff;
@@ -94,7 +86,7 @@ li a:hover {
 }
 
 .header h2 {
-    font-size: 22px;
+    font-size: 2vw;
     font-family: 'Taviraj', serif;
     color: #ffffff;
     margin: 0;
@@ -103,15 +95,12 @@ li a:hover {
 
 .intro {
     position: relative;
-    /* background-color: #e4e7e8; */
     width: 100%;
-    height: 695px;
 }
 
 .staff {
     width: 100%;
     height: 160px;
-    font-size: 28px;
     font-weight: 100;
     font-family: 'Adamina', serif;
 }
@@ -121,7 +110,9 @@ li a:hover {
     padding-right: 22px;
     letter-spacing: 4px;
 }
-.headerIntro  h1{
+
+.headerIntro h1 {
+    font-size: 28px;
     margin: 0;
     padding: 20px 0;
 }
@@ -132,26 +123,25 @@ li a:hover {
 }
 
 .staffIntro {
-    padding: 0 240px;
+    padding: 0 10vw;
 }
 
 .info {
-    height: 400px;
     flex: 1;
     text-align: center;
-    padding-left: 10px;
+    padding: 0 5px;
 }
 
 .info .img {
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 25vw;
     overflow: hidden;
     border-radius: 50%;
     position: relative;
 }
 
 .info img {
-    width: 300px;
+    width: 25vw;
     position: relative;
 }
 
@@ -167,23 +157,19 @@ li a:hover {
 .info p {
     font-family: 'Taviraj', serif;
     padding: 0px 25px;
-    width: 265px;
+    min-width: 265px;
     line-height: 24px;
     color: #80888e;
 }
 
 .socialMedia {
     width: 100%;
-    height: 438px;
     background-color: #f3f3f3;
 }
 
 .socialMedia .mediaBgImg {
-    /*background: url('http://www.designbolts.com/wp-content/uploads/2012/12/simple-pattern-white-seamless-website-background.jpg');*/
     background-size: cover;
-    position: absolute;
     width: 100%;
-    height: 440px;
     z-index: -1;
 }
 
@@ -235,22 +221,23 @@ li a:hover {
 }
 
 .contactSection {
-    padding: 0 240px;
+    padding: 0 10vw;
     background-color: #c53163;
-    height: 646px;
 }
 
 .contactUs {
-    height: 188px;
     color: #ffffff;
     font-size: 28px;
     text-align: center;
+    padding-bottom: 5vw;
 }
 
 .contactUs h2 {
     font-weight: 100;
+    font-size: 4vw;
     margin: 0;
     padding: 57px 0 19px;
+    white-space: nowrap;
 }
 
 .contactUs .underline {
@@ -260,56 +247,54 @@ li a:hover {
 
 .contactForm {
     padding: 0 7px;
+    flex: 1;
 }
 
 input,
 textarea {
     display: block;
-    width: 386px;
     padding: 16px 33px;
     margin: 20px 0;
     border: none;
     border-radius: 4px;
+    font-size: 1.6vw;
 }
 
 input::placeholder {
     color: #e3e6e8;
-    font-size: 20px;
+    font-size: 1.6vw;
     letter-spacing: 2px;
 }
 
-input {
-    font-size: 22px;
-}
-
 textarea {
-    height: 90px;
+    height: 15vw;
     resize: none;
 }
 
 textarea::placeholder {
-    font-size: 20px;
+    font-size: 1.6vw;
     color: #e3e6e8;
 }
 
 .mapAddress {
-    padding: 16px 0 16px 33px;
+    padding: 20px 7px;
+    flex: 1;
 }
 
 .map {
     overflow: hidden;
     border-radius: 8px;
+    position: relative;
 }
 
 iframe {
-    width: 452px;
+    width: 100%;
 }
 
 .sendButton {
     background-color: #333333;
     color: #fdfdfd;
     border: none;
-    width: 448px;
     letter-spacing: 2px;
 }
 
@@ -321,8 +306,6 @@ iframe {
     padding-left: 20px;
     letter-spacing: 1px;
 }
-
-
 
 .bottom {
     background-color: #333333;
